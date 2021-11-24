@@ -1,0 +1,46 @@
+*tmux_lib.vim.txt*
+                                                                *tmux_lib.vim*
+
+==============================================================================
+CONTENTS                                               *tmux_lib.vim-contents*
+  1. Introduction.........................................|tmux_lib.vim-intro|
+  2. Configuration.......................................|tmux_lib.vim-config|
+  3. Functions........................................|tmux_lib.vim-functions|
+  4. Mappings..........................................|tmux_lib.vim-mappings|
+
+==============================================================================
+INTRODUCTION                                              *tmux_lib.vim-intro*
+
+A plugin providing vim bindings for https://github.com/okkays/tmux_lib
+utilities.
+
+
+==============================================================================
+CONFIGURATION                                            *tmux_lib.vim-config*
+
+                                                    *g:tmux_lib_auto_map_keys*
+Whether to use the default mappings. Disable to set up your own.
+
+==============================================================================
+FUNCTIONS                                             *tmux_lib.vim-functions*
+
+tmux_lib#FzfScrollbackFiles()                  *tmux_lib#FzfScrollbackFiles()*
+
+  Opens a fzf grep window for any file strings in the tmux scrollback.
+
+  Only shows files in the current session's scrollback (but for any
+  window/pane)
+
+==============================================================================
+MAPPINGS                                               *tmux_lib.vim-mappings*
+
+
+*<leader>t*
+
+  Starts a fzf session for any file strings in the tmux scrollback.
+
+  Only shows files in the current session's scrollback (but for any
+window/pane)
+
+
+vim:tw=78:ts=8:ft=help:norl:
